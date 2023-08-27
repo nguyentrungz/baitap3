@@ -1,0 +1,31 @@
+lines = []
+while True:
+   s = input()
+   if s:
+      lines.append(s.upper())
+   else:
+      break;
+for sentence in lines:
+    print (sentence)
+s = input("Nhập câu của bạn: ")
+d={"DIGITS":0, "LETTERS":0}
+for c in s:
+    if c.isdigit():
+        d["DIGITS"]+=1
+    elif c.isalpha():
+        d["LETTERS"]+=1
+    else:
+        pass
+print ("Số chữ cái là:", d["LETTERS"])
+print ("Số chữ số là:", d["DIGITS"])
+s = input("Nhập câu của bạn: ")
+d={"UPPER CASE":0, "LOWER CASE":0}
+for c in s:
+    if c.isupper():
+        d["UPPER CASE"]+=1
+    elif c.islower():
+        d["LOWER CASE"]+=1
+    else:
+        pass
+print ("Chữ hoa:", d["UPPER CASE"])
+print ("Chữ thường:", d["LOWER CASE"])
